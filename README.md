@@ -8,16 +8,16 @@ Chuxin Piao, Xiao Wang, Wanyu Zhong
 #### What dataset you used and your initial plan 
 PUBG Match Death and Statistics from Kaggle.com (https://www.kaggle.com/skihikingkevin/pubg-match-deaths) \
 The datasets are stored in ASW S3 bucket as follow: \
-s3://bigdata2020group6/aggregate/agg_match_stats_0.csv
-s3://bigdata2020group6/aggregate/agg_match_stats_1.csv
-s3://bigdata2020group6/aggregate/agg_match_stats_2.csv
-s3://bigdata2020group6/aggregate/agg_match_stats_3.csv
-s3://bigdata2020group6/aggregate/agg_match_stats_4.csv
-s3://bigdata2020group6/deaths/kill_match_stats_final_0.csv
-s3://bigdata2020group6/deaths/kill_match_stats_final_1.csv
-s3://bigdata2020group6/deaths/kill_match_stats_final_2.csv
-s3://bigdata2020group6/deaths/kill_match_stats_final_3.csv
-s3://bigdata2020group6/deaths/kill_match_stats_final_4.csv
+s3://bigdata2020group6/aggregate/agg_match_stats_0.csv \
+s3://bigdata2020group6/aggregate/agg_match_stats_1.csv \
+s3://bigdata2020group6/aggregate/agg_match_stats_2.csv \
+s3://bigdata2020group6/aggregate/agg_match_stats_3.csv \
+s3://bigdata2020group6/aggregate/agg_match_stats_4.csv \
+s3://bigdata2020group6/deaths/kill_match_stats_final_0.csv \
+s3://bigdata2020group6/deaths/kill_match_stats_final_1.csv \
+s3://bigdata2020group6/deaths/kill_match_stats_final_2.csv \
+s3://bigdata2020group6/deaths/kill_match_stats_final_3.csv \
+s3://bigdata2020group6/deaths/kill_match_stats_final_4.csv \
 #### Exploratory analysis section
 #### Any insights you've learned from the data (with charts to illustrate) 
 #### Methods section: 
