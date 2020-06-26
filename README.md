@@ -2,16 +2,16 @@
 project-group-6 created by GitHub Classroom
 
 #### Group member names 
-Chuxin Piao, Xiao Wang, Wanyu Zhong \
+Chuxin Piao, Xiao Wang, Wanyu Zhong 
 #### Executive Summary
 #### Introduction
 #### What dataset you used and your initial plan 
-PUBG Match Death and Statistics from Kaggle.com \
-#### Exploratory analysis section. 
+PUBG Match Death and Statistics from Kaggle.com (https://www.kaggle.com/skihikingkevin/pubg-match-deaths)
+#### Exploratory analysis section
 #### Any insights you've learned from the data (with charts to illustrate) 
 #### Methods section: 
 #### How you sourced in ingested the data 
-#### How you cleaned, prepared the dataset. 
+#### How you cleaned, prepared the dataset
 #### How did you model the dataset, what techniques did you use and why 
 #### Did you just visualize the dataset, and if so, why?  
 #### Results/Conclusions section: 
