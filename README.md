@@ -34,7 +34,3 @@ s3://bigdata2020group6/deaths/kill_match_stats_final_4.csv \
 #### Takeaways from the course. 
 
 
-Question:
-1. 乘车是否活得更久？Aggregate-player-dist-walk, player-list-ride,player-survive-time
-2. 跳哪里危险 death-Victim position-x, Victim position-y
-3. 开局多少秒之内最容易死，death-timeQuestion:
