@@ -94,7 +94,7 @@ Split the training set into 80% training and 20% testing, and validate our predi
 We checked many metrics such as AUC, F1, accuracy scores on testing dataset.
 
 #### Challenges you've had (technical& non-technical) and how you overcame them:
-Challenges:\
+
 1.Plotting in Pyspark with huge amount of data is very challenge to us. We try to convert spark dataframe to pandas dataframe then plot. \
 2.Try to do grid search on classification models, but it takes more than 4 hours to train only one individual model, so we removed it (Failed to perform parameter tuning. We need more computing power.); \
 3.Failed to use xxx.toPandas() method. Everytime we use this command, the session will be died. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
