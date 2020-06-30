@@ -5,7 +5,8 @@ project-group-6 created by GitHub Classroom
 Chuxin Piao, Xiao Wang, Wanyu Zhong 
 
 #### Executive Summary
-PUBG is a popular game... \
+PUBG is a popular online multiplayer battle royale game. In this projects, we manipulated two csv files (around 20GB) with 1200 million rows of data to analyze game statistics. We look into the relationship between locations, weapons and placements. We also build several models to predict player's placements based on different features. Hope this project can help game developers as well as game players to learn some new insights on this product. 
+
 #### Introduction:
 This dataset provides two zips: aggregate and deaths. In deaths, the files record every death that occurred within the 720k matches. That is, each row documents an event where a player has died in the match. In aggregate, each match's meta information and player statistics are summarized (as provided by pubg). It includes various aggregate statistics such as player kills, damage, distance walked, etc as well as metadata on the match itself such as queue size, fpp/tpp, date, etc To summarize and explore the dataset, we are interested in the death reason in the PUBG game, whether it is related with location or other metrics.
 
@@ -29,13 +30,13 @@ s3://bigdata2020group6/deaths/kill_match_stats_final_2.csv \
 s3://bigdata2020group6/deaths/kill_match_stats_final_3.csv \
 s3://bigdata2020group6/deaths/kill_match_stats_final_4.csv 
 
+
 ### Exploratory Analysis Section
 #### Any insights you've learned from the data (with charts to illustrate)
-After discussing and exploring our dataset, we set player placement, which is the players' rank in games as the important dependent variable for our project. 
-Aggregate dataset include 15 columns, 11 of the columns are numbers. From these number columns, we picked game_size, party_size, player_kills and player survive_time as the important independent variabls.\
-Death dataset include 12 columns, 7 of them are numbers. From these number columns, we picked killer_placement, victim_placement, killer_position_x and y, victim position_x and y and time as our emphasized variables. From other text column, we focus on killed_by, which indicates the killed wheapons for specific players and map.\
-Among these chosen variables, we have created different topics, such as the dangerous position of parachuting to explore and visualize our dataset. We will show all the questions in detailed in the next section.\
-Besides, after carefully read the dataset, we found there are only two map used in map columns and the map picture are also provided in the Kaggle attachments. Thus, we have a initial plan of combing the position axis in death dataset and the map together to achieve further visualization.
+- We set player placement, which is the players' rank in games as the important dependent variable for our project. 
+- Aggregate dataset include 15 columns, 11 of the columns are numbers. From these number columns, we picked game_size, party_size, player_kills and player survive_time as the important independent variabls.
+- Death dataset include 12 columns, 7 of them are numbers. From these number columns, we picked killer_placement, victim_placement, killer_position_x and y, victim position_x and y and time as our emphasized variables. From other text column, we focus on killed_by, which indicates the killed wheapons for specific players and map.
+- We found there are only two map used in map columns and the map picture are also provided in the Kaggle attachments. Thus, we have a initial plan of combing the position axis in death dataset and the map together to achieve further visualization.
 
 ### Methods Section
 #### How you sourced in ingested the data
