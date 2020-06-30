@@ -56,10 +56,12 @@ After that, we would also hope to try some classification method on our dataset.
 Further using the variable created in the previous steps, we also tested random forest model.
 
 #### Did you just visualize the dataset, and if so, why? 
-In Kaggle, it already provided basic visualization for each column. Thus, in spark, we first take(10) to make sure our we have the right data structure and use spark.sql to work on some basic questions:\
+In Kaggle, it already provided basic visualization for each column. Thus, in spark, we first take(10) to make sure our we have the right data structure and use spark.sql to work on some basic questions:
 
 a. What location is dangerous for "parachuting"?\
-   Airport and School are the most dangerous places in the first two minuts of the game. If players choose to parachute to these locations, they are very likely to meet enemies and battle with them. 
+   In Erangel map, Military Base and Pochinki are the most dangerous places in the first two minuts of the game.  \
+   In Miramar map, Water Treatment and San Martin are the most dangerous places in the first two minuts of the game. \
+   If players choose to parachute to these locations, they are very likely to meet enemies and battle with them. 
    
 b. Figure out the relationship between player placement and enemies killed(separate by party size).\
    For party of 1, on average the player needs to kill 6.9 enemies to win the first place. \
