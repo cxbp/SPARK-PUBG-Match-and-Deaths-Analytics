@@ -8,9 +8,9 @@ Chuxin Piao, Xiao Wang, Wanyu Zhong
 #### Introduction:
 This dataset provides two zips: aggregate and deaths. In deaths, the files record every death that occurred within the 720k matches. That is, each row documents an event where a player has died in the match. In aggregate, each match's meta information and player statistics are summarized (as provided by pubg). It includes various aggregate statistics such as player kills, damage, distance walked, etc as well as metadata on the match itself such as queue size, fpp/tpp, date, etc To summarize and explore the dataset, we are interested in the death reason in the PUBG game, whether it is related with location or other metrics.
 #### What dataset you used and your initial plan:
-Initial Plan: \
+Initial Plan:、
 Use this datset to develop some useful suggestions for PUBG players to help them improve the placement in the game. 
-Stack data together into one csv file, find player placements and positions that related most to death in game. \
+Stack data together into one csv file, find player placements and positions that related most to death in game.
 
 Dataset:
 PUBG Match Death and Statistics from Kaggle.com (https://www.kaggle.com/skihikingkevin/pubg-match-deaths) \
@@ -45,17 +45,21 @@ We first chose to use linear regression. Set Team_placement as our dependent var
 After that, we would also hope to try some classification method on our dataset. Thus, we set the placement ranking in top 10% as 1 and others as 0 and fit logistic regression model.\
 Further using the variable created in the previous steps, we also tested random forest model.
 #### Did you just visualize the dataset, and if so, why? 
+In Kaggle, it already provided basic visualization for each column. Thus, in spark, we first take(10) to make sure our we have the right data structure and use spark.sql to work on some basic questions:\
+a. What location is dangerous for "parachuting"?\
+b. Figure out the relationship between player placement and enemies killed(separate by party size).\
+c. Figure out relationship of kill_distance and kill_by.
 
 ### Results/Conclusions Section
 #### What did you find and learn? 
 
 #### How did you validate your results? 
-Split the training set into 80% training and 20% testing, and validate our prediction results on the 20% testing data. 
+We used 5-fold-CV on our dataset. Split the training set into 80% training and 20% testing, and validate our prediction results on the 20% testing data. 
 #### Challenges you've had (technical& non-technical) and how you overcame them:
-Challenges:
-1. We first mix all the party_size together and get unreasonable results. Our average rank is larger than 25, this is impossible for party size 4.
-2. Try to do grid search on classification models, but it takes more than 4 hours to train only one individual model, so we removed it (Failed to perform parameter tuning. We need more computing power.);
-3. Failed to use xxx.toPandas() method. Everytime we use this command, the session will be died. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
+Challenges:\
+1.We first mix all the party_size together and get unreasonable results. Our average rank is larger than 25, this is impossible for party size 4.\
+2.Try to do grid search on classification models, but it takes more than 4 hours to train only one individual model, so we removed it (Failed to perform parameter tuning. We need more computing power.);\
+3.Failed to use xxx.toPandas() method. Everytime we use this command, the session will be died. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
 #### Future work: what would you do differently and what follow-up work would you do? 
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
 #### Division of labor: which team member was responsible for which part of the project. 
