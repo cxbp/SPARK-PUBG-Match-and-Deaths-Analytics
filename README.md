@@ -38,18 +38,22 @@ Besides, after carefully read the dataset, we found there are only two map used 
 
 ### Methods Section
 #### How you sourced in ingested the data
-- Store all data files in S3 bucket. 
+- Upload all data files in S3 bucket. 
 - Read in 10 csv files (around 2GB each) by creating spark session and save as aggregate file (around 10GB) and death file (around 10GB). 
 - We have read carefully for the PUBG game rules, and in the spark.sql part we decided to separate the data according to different party size. Because if party size equals to 4, then the maximum team_placement will be 25 among an 100-people game. For party size equals to 2, the maximum team_placement would be 50 and for party size equals to 1, the maximum team_placement would be 100. It is not reasonable if we mix all the party_size together and calculate placement ranking during our working process. In the later Machine Learning part, we have add a new column which calculated the placement ranking percent to solve this problem.
+
 #### How you cleaned, prepared the dataset
+Our dataset is relatively well structured and cleaned. Here are our steps of cleaning and preparing: 
  - Check on variable type of each column. 
  - Find null values in each column. 
  - Drop null values that did not contribute much to our analysis. 
  - Replace values for certain NAs. 
+ 
 #### How did you model the dataset, what techniques did you use and why?
 We first chose to use linear regression. Set Team_placement as our dependent variable and other number variables in the aggregate dataset as the independent variable.\
 After that, we would also hope to try some classification method on our dataset. Thus, we set the placement ranking in top 10% as 1 and others as 0 and fit logistic regression model.\
 Further using the variable created in the previous steps, we also tested random forest model.
+
 #### Did you just visualize the dataset, and if so, why? 
 In Kaggle, it already provided basic visualization for each column. Thus, in spark, we first take(10) to make sure our we have the right data structure and use spark.sql to work on some basic questions:\
 a. What location is dangerous for "parachuting"?\
@@ -61,6 +65,7 @@ c. Figure out relationship of kill_distance and kill_by.
 
 #### How did you validate your results? 
 We used 5-fold-CV on our dataset. Split the training set into 80% training and 20% testing, and validate our prediction results on the 20% testing data. 
+
 #### Challenges you've had (technical& non-technical) and how you overcame them:
 Challenges:\
 1.We first mix all the party_size together and get unreasonable results. Our average rank is larger than 25, this is impossible for party size 4.\
@@ -68,10 +73,12 @@ Challenges:\
 3.Failed to use xxx.toPandas() method. Everytime we use this command, the session will be died. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
 #### Future work: what would you do differently and what follow-up work would you do? 
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
+
 #### Division of labor: which team member was responsible for which part of the project. 
 Chuxin Piao: Working on spark.sql and maching learning coding\
 Wanyu Zhong: Working on spark.sql and maching learning coding\
 Xiao Wang: Working on spark.sql and maching learning coding
+
 #### Takeaways from the course. 
 From this course, we have learned how to use spark and rdd techniques. Also, we have learned the way to deal with large dataset without using our own computer execution.
 
