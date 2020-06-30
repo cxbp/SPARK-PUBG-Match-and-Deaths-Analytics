@@ -12,7 +12,7 @@ This dataset provides two zips: aggregate and deaths. In deaths, the files recor
 #### What dataset you used and your initial plan:
 Initial Plan:
 Use this datset to develop some useful suggestions for PUBG players to help them improve the placement in the game. 
-After stacking all data together into one csv file, we will have sufficient data to find player placements and positions that related most to death in game.
+After stacking all data together into two csv files, we will have sufficient data to find player placements and positions that related most to death in game.
 
 Dataset:
 PUBG Match Death and Statistics from Kaggle.com (https://www.kaggle.com/skihikingkevin/pubg-match-deaths) \
@@ -75,7 +75,8 @@ d. Most popular weapons used in the game.
 #### What did you find and learn? 
 
 #### How did you validate your results? 
-We used 5-fold-CV on our dataset. Split the training set into 80% training and 20% testing, and validate our prediction results on the 20% testing data. 
+Split the training set into 80% training and 20% testing, and validate our prediction results on the 20% testing data. 
+We checked many metrics such as AUC, F1, accuracy scores on testing dataset.
 
 #### Challenges you've had (technical& non-technical) and how you overcame them:
 Challenges:\
@@ -84,6 +85,7 @@ Challenges:\
 3.Failed to use xxx.toPandas() method. Everytime we use this command, the session will be died. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
 #### Future work: what would you do differently and what follow-up work would you do? 
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
+If we can have more computational power without the limitation on student account, we would love to see the result of grid search with cross-validation. 
 
 #### Division of labor: which team member was responsible for which part of the project. 
 The work is evenly divded among group members.\
