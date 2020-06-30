@@ -4,6 +4,8 @@ project-group-6 created by GitHub Classroom
 #### Group Member Names 
 Chuxin Piao, Xiao Wang, Wanyu Zhong 
 
+### Introductory Section
+
 #### Executive Summary
 PUBG is a popular online multiplayer battle royale game. In this projects, we manipulated two csv files (around 20GB) with 1200 million rows of data to analyze game statistics. We look into the relationship between locations, weapons and placements. We also build several models to predict player's placements based on different features. Hope this project can help game developers as well as game players to learn some new insights on this product. 
 
