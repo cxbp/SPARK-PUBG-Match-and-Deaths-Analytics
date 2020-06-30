@@ -57,13 +57,14 @@ Our dataset is relatively well structured and cleaned. Here are our steps of cle
 - Further using the variable created in the previous steps, we also tested random forest model.
 
 #### Did you just visualize the dataset, and if so, why? 
-In Kaggle, it already provided basic visualization for each column. Thus, in spark, we first take(10) to make sure our we have the right data structure and use spark.sql to work on some basic questions:
-
+Pyspark limited our choice for visualization, since we can only plot histogram on Pyspark. We need to transform the dataset into pandas dataframe for other visualization options. 
+First, we plot the distribution of survival time and find out the first 120 seconds are most intense and dangerous time period since many palyers "died" in first 120 seconds. Then we apply this find to find which location is dangerous for parachuting.  
 a. What location is dangerous for "parachuting"?\
    In Erangel map, Military Base and Pochinki are the most dangerous places in the first two minuts of the game.  \
    In Miramar map, Water Treatment and San Martin are the most dangerous places in the first two minuts of the game. \
    If players choose to parachute to these locations, they are very likely to meet enemies and battle with them. 
-   
+
+We did not use visualization for following questions since the plot took long time to process, but we still got meaningful findings: 
 b. Figure out the relationship between player placement and enemies killed(separate by party size).\
    For party of 1, on average the player needs to kill 6.9 enemies to win the first place. \
    For party of 2, on average the player needs to kill 4.4 enemies to win the first place. \
