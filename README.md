@@ -35,10 +35,13 @@ s3://bigdata2020group6/deaths/kill_match_stats_final_4.csv
 
 ### Exploratory Analysis Section
 #### Any insights you've learned from the data (with charts to illustrate)
-- We set player placement, which is the players' rank in games as the important dependent variable for our project. 
+
+- We find player placement (int), which is the players' rank in games can be used as an important dependent variable for our project. 
 - Aggregate dataset include 15 columns, 11 of the columns are numbers. From these number columns, we picked game_size, party_size, player_kills and player survive_time as the important independent variabls.
 - Death dataset include 12 columns, 7 of them are numbers. From these number columns, we picked killer_placement, victim_placement, killer_position_x and y, victim position_x and y and time as our emphasized variables. From other text column, we focus on killed_by, which indicates the killed wheapons for specific players and map.
 - We found there are only two map used in map columns and the map picture are also provided in the Kaggle attachments. Thus, we have a initial plan of combing the position axis in death dataset and the map together to achieve further visualization.
+
+Please see the full EDA process in our notebook. 
 
 ### Methods Section
 #### How you sourced in ingested the data
