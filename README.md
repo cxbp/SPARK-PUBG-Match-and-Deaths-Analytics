@@ -54,7 +54,7 @@ c. Figure out relationship of kill_distance and kill_by.
 #### What did you find and learn? 
 
 #### How did you validate your results? 
-Split the training set into 80% training and 20% testing, and validate our prediction results on the 20% testing data. 
+We used 5-fold-CV on our dataset. Split the training set into 80% training and 20% testing, and validate our prediction results on the 20% testing data. 
 #### Challenges you've had (technical& non-technical) and how you overcame them:
 Challenges:\
 1.We first mix all the party_size together and get unreasonable results. Our average rank is larger than 25, this is impossible for party size 4.\
