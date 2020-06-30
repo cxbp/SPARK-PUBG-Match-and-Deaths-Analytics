@@ -45,6 +45,10 @@ We first chose to use linear regression. Set Team_placement as our dependent var
 After that, we would also hope to try some classification method on our dataset. Thus, we set the placement ranking in top 10% as 1 and others as 0 and fit logistic regression model.\
 Further using the variable created in the previous steps, we also tested random forest model.
 #### Did you just visualize the dataset, and if so, why? 
+In Kaggle, it already provided basic visualization for each column. Thus, in spark, we first take(10) to make sure our we have the right data structure and use spark.sql to work on some basic questions:\
+a. What location is dangerous for "parachuting"?\
+b. Figure out the relationship between player placement and enemies killed(separate by party size).\
+c. Figure out relationship of kill_distance and kill_by.\
 
 ### Results/Conclusions Section
 #### What did you find and learn? 
