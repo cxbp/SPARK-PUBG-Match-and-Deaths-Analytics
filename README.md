@@ -86,11 +86,12 @@ Challenges:\
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
 
 #### Division of labor: which team member was responsible for which part of the project. 
+The work is evenly divded among group members.\
 Chuxin Piao: Working on spark.sql and maching learning coding\
 Wanyu Zhong: Working on spark.sql and maching learning coding\
 Xiao Wang: Working on spark.sql and maching learning coding
 
 #### Takeaways from the course. 
-From this course, we have learned how to use spark and rdd techniques. Also, we have learned the way to deal with large dataset without using our own computer execution.
-
+From this course, we have learned how to use spark and rdd techniques to efficiently manipulate lare datasets. Also, we have practiced different ways to deal with large dataset without using our own computer execution.
+One of the most meaningful takeways in this course is the importance of considering computation efficiency. How to obtain the expected results using less computation power and time? When dealing with small datasets, we rarely need to take care of this problem. 
 
