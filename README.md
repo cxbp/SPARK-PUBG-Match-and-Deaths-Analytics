@@ -49,8 +49,11 @@ Further using the variable created in the previous steps, we also tested random 
 
 #### How did you validate your results? 
 
-#### Challenges you've had (technical & non-technical) and how you overcame them:
-We first mix all the party_size together and get unreasonable results. Our average rank is larger than 25, this is impossible for party size 4.
+#### Challenges you've had (technical& non-technical) and how you overcame them:
+Challenges:
+1. We first mix all the party_size together and get unreasonable results. Our average rank is larger than 25, this is impossible for party size 4.
+2. Try to do grid search on classification models, but it takes more than 4 hours to train only one individual model, so we removed it (Failed to perform parameter tuning. We need more computing power.);
+3. Failed to use xxx.toPandas() method. Everytime we use this command, the session will be died. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
 #### Future work: what would you do differently and what follow-up work would you do? 
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
 #### Division of labor: which team member was responsible for which part of the project. 
