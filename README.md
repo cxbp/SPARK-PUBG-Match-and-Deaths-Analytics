@@ -41,7 +41,6 @@ Besides, after carefully read the dataset, we found there are only two map used 
 #### How you sourced in ingested the data
 - Upload all data files in S3 bucket. 
 - Read in 10 csv files (around 2GB each) by creating spark session and save as aggregate file (around 10GB) and death file (around 10GB). 
-- We have read carefully for the PUBG game rules, and in the spark.sql part we decided to separate the data according to different party size. Because if party size equals to 4, then the maximum team_placement will be 25 among an 100-people game. For party size equals to 2, the maximum team_placement would be 50 and for party size equals to 1, the maximum team_placement would be 100. It is not reasonable if we mix all the party_size together and calculate placement ranking during our working process. In the later Machine Learning part, we have add a new column which calculated the placement ranking percent to solve this problem.
 
 #### How you cleaned, prepared the dataset
 Our dataset is relatively well structured and cleaned. Here are our steps of cleaning and preparing: 
@@ -49,6 +48,7 @@ Our dataset is relatively well structured and cleaned. Here are our steps of cle
  - Find null values in each column. 
  - Drop null values that did not contribute much to our analysis. 
  - Replace values for certain NAs. 
+ - We have read carefully for the PUBG game rules, and in the spark.sql part we decided to separate the data according to different party size. Because if party size equals to 4, then the maximum team_placement will be 25 among an 100-people game. For party size equals to 2, the maximum team_placement would be 50 and for party size equals to 1, the maximum team_placement would be 100. It is not reasonable if we mix all the party_size together and calculate placement ranking during our working process. In the later Machine Learning part, we have add a new column which calculated the placement ranking percent to solve this problem.
  
 #### How did you model the dataset, what techniques did you use and why?
 We first chose to use linear regression. Set Team_placement as our dependent variable and other number variables in the aggregate dataset as the independent variable.\
