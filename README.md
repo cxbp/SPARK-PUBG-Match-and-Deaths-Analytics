@@ -10,7 +10,7 @@ This dataset provides two zips: aggregate and deaths. In deaths, the files recor
 #### What dataset you used and your initial plan:
 Initial Plan:、
 Use this datset to develop some useful suggestions for PUBG players to help them improve the placement in the game. 
-Stack data together into one csv file, find player placements and positions that related most to death in game.\
+Stack data together into one csv file, find player placements and positions that related most to death in game.
 
 Dataset:
 PUBG Match Death and Statistics from Kaggle.com (https://www.kaggle.com/skihikingkevin/pubg-match-deaths) \
