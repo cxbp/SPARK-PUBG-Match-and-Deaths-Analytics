@@ -54,8 +54,8 @@ We first mix all the party_size together and get unreasonable results. Our avera
 #### Future work: what would you do differently and what follow-up work would you do? 
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
 #### Division of labor: which team member was responsible for which part of the project. 
-Chuxin Piao: Working on spark.sql and maching learning coding
-Wanyu Zhong: Working on spark.sql and maching learning coding
+Chuxin Piao: Working on spark.sql and maching learning coding\
+Wanyu Zhong: Working on spark.sql and maching learning coding\
 Xiao Wang: Working on spark.sql and maching learning coding
 #### Takeaways from the course. 
 From this course, we have learned how to use spark and rdd techniques. Also, we have learned the way to deal with large dataset without using our own computer execution.
