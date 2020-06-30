@@ -32,7 +32,7 @@ s3://bigdata2020group6/deaths/kill_match_stats_final_2.csv \
 s3://bigdata2020group6/deaths/kill_match_stats_final_3.csv \
 s3://bigdata2020group6/deaths/kill_match_stats_final_4.csv\
 
-Note: we also uploaded two images of the game map to achieve best visualization results. 
+Note: we also uploaded two images of the game maps, erangel.jpg and miramar.jpg, to achieve best visualization results. 
 
 
 ### Exploratory Analysis Section
