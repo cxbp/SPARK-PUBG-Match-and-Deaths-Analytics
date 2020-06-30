@@ -57,16 +57,20 @@ Further using the variable created in the previous steps, we also tested random 
 
 #### Did you just visualize the dataset, and if so, why? 
 In Kaggle, it already provided basic visualization for each column. Thus, in spark, we first take(10) to make sure our we have the right data structure and use spark.sql to work on some basic questions:\
+
 a. What location is dangerous for "parachuting"?\
    Airport and School are the most dangerous places in the first two minuts of the game. If players choose to parachute to these locations, they are very likely to meet enemies and battle with them. \
+   
 b. Figure out the relationship between player placement and enemies killed(separate by party size).\
    For party of 1, on average the player needs to kill 6.9 enemies to win the first place. \
    For party of 2, on average the player needs to kill 4.4 enemies to win the first place. \
    For party of 4, on average the player needs to kill 2.9 enemies to win the first place. \
    Hence, playing in larger parties coube be actually less stressful for players. \
+   
 c. Figure out relationship of kill_distance and kill_by.\
    Redzone, punch,  Motorbike are three shortest kill-distance weapons to be used in the game. \
    M24, AWM, Mk14 are three longest kill-distance weapons to be used in the game. \
+   
 d. Most popular weapons used in the game. \
    For winner (1st place player) in the game, top3 most popular weapons are M416, SCAR-L, and M16A4. \
    For 2nd - 9th place players, top3 most popluar weapons are also M416, SCAR-L, and M16A4. \
