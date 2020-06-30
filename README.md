@@ -1,4 +1,4 @@
-# Project-Group-6
+# PUBG Match and Deaths Project - Group 6
 project-group-6 created by GitHub Classroom
 
 #### Group Member Names 
