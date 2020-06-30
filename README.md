@@ -48,7 +48,7 @@ Further using the variable created in the previous steps, we also tested random 
 In Kaggle, it already provided basic visualization for each column. Thus, in spark, we first take(10) to make sure our we have the right data structure and use spark.sql to work on some basic questions:\
 a. What location is dangerous for "parachuting"?\
 b. Figure out the relationship between player placement and enemies killed(separate by party size).\
-c. Figure out relationship of kill_distance and kill_by.\
+c. Figure out relationship of kill_distance and kill_by.
 
 ### Results/Conclusions Section
 #### What did you find and learn? 
