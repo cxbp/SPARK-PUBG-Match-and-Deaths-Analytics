@@ -4,7 +4,8 @@ project-group-6 created by GitHub Classroom
 #### Group Member Names 
 Chuxin Piao, Xiao Wang, Wanyu Zhong 
 
-### Executive Summary
+#### Executive Summary
+PUBG is a popular game... \
 #### Introduction:
 This dataset provides two zips: aggregate and deaths. In deaths, the files record every death that occurred within the 720k matches. That is, each row documents an event where a player has died in the match. In aggregate, each match's meta information and player statistics are summarized (as provided by pubg). It includes various aggregate statistics such as player kills, damage, distance walked, etc as well as metadata on the match itself such as queue size, fpp/tpp, date, etc To summarize and explore the dataset, we are interested in the death reason in the PUBG game, whether it is related with location or other metrics.
 
@@ -64,7 +65,11 @@ b. Figure out the relationship between player placement and enemies killed(separ
    For party of 4, on average the player needs to kill 2.9 enemies to win the first place. 
    Hence, playing in larger parties coube be actually less stressful for players. 
 c. Figure out relationship of kill_distance and kill_by.
-   
+   Redzone, punch,  Motorbike are three shortest kill-distance weapons to be used in the game. 
+   M24, AWM, Mk14 are three longest kill-distance weapons to be used in the game. 
+d. Most popular weapons used in the game. 
+   For winner (1st place player) in the game, top3 most popular weapons are M416, SCAR-L, and M16A4.
+   For 2nd - 9th place players, top3 most popluar weapons are also M416, SCAR-L, and M16A4.
 
 ### Results/Conclusions Section
 #### What did you find and learn? 
