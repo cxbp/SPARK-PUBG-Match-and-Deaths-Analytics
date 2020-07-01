@@ -1,6 +1,6 @@
 # PUBG Match and Deaths Project - Group 6
 ![Image of PUBG](https://upload.wikimedia.org/wikipedia/en/3/3d/PlayerUnknown%27s_Battlegrounds_Steam_Logo.jpg)\
-![Image of erangel_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/erangel_death.png)\
+
 ![Image of miramar_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/miramar_death.png)\
 project-group-6 created by GitHub Classroom
 
