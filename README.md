@@ -2,7 +2,7 @@
 ![Image of PUBG](https://upload.wikimedia.org/wikipedia/en/3/3d/PlayerUnknown%27s_Battlegrounds_Steam_Logo.jpg)\
 project-group-6 created by GitHub Classroom
 
-### Group Member Names 
+### Group Member 
 Chuxin Piao, Xiao Wang, Wanyu Zhong 
 
 ### Introductory Section
