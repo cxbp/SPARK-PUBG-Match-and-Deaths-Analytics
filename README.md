@@ -47,11 +47,11 @@ Note: we also uploaded two images of the game maps, erangel.jpg, and miramar.jpg
 Please see the full EDA process in our notebook. 
 
 ### Methods Section
-#### How you sourced in ingested the data
+#### How you sourced in ingested the data?
 - Upload all data files in the S3 bucket. 
 - Read in 10 CSV files (around 2GB each) by creating a spark session and save as aggregate file (around 10GB) and death file (around 10GB). 
 
-#### How you cleaned, prepared the dataset
+#### How you cleaned, prepared the dataset?
 Our dataset is relatively well structured and cleaned. Here are our steps for cleaning and preparing: 
  - Check on the variable type of each column. 
  - Find null values in each column. 
@@ -111,13 +111,13 @@ c. Failed to use xxx.toPandas() method. Every time we use this command, the sess
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
 If we can have more computational power without the limitation on the student account, we would love to see the result of the grid search with cross-validation. 
 
-#### Division of labor: which team member was responsible for which part of the project. 
+#### Division of labor: which team member was responsible for which part of the project? 
 The work is evenly divided among group members.\
 Chuxin Piao: Working on spark.sql and matching learning coding\
 Wanyu Zhong: Working on spark.sql and matching learning coding\
 Xiao Wang: Working on spark.sql and matching learning coding
 
-#### Takeaways from the course. 
+#### Takeaways from the course? 
 From this course, we have learned how to use spark and rdd techniques to efficiently manipulate large datasets. Also, we have practiced different ways to deal with large datasets without using our own computer execution.
 One of the most meaningful takeaways in this course is the importance of considering computation efficiency. How to obtain the expected results using less computation power and time? When dealing with small datasets, we rarely need to take care of this problem. 
 
