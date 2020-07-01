@@ -1,10 +1,8 @@
 # PUBG Match and Deaths Project - Group 6
 ![Image of PUBG](https://upload.wikimedia.org/wikipedia/en/3/3d/PlayerUnknown%27s_Battlegrounds_Steam_Logo.jpg)\
-![Image of erangel_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/erangel_death.png)\
-![Image of miramar_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/miramar_death.png)\
 project-group-6 created by GitHub Classroom
 
-#### Group Member Names 
+### Group Member Names 
 Chuxin Piao, Xiao Wang, Wanyu Zhong 
 
 ### Introductory Section
@@ -72,7 +70,9 @@ First, we plot the distribution of survival time and find out the first 120 seco
 a. What location is dangerous for "parachuting"?\
    In the Erangel map, Military Base and Pochinki are the most dangerous places in the first two minutes of the game.  \
    In Miramar map, Water Treatment and San Martin are the most dangerous places in the first two minutes of the game. \
-   If players choose to parachute to these locations, they are very likely to meet enemies and battle with them. 
+   If players choose to parachute to these locations, they are very likely to meet enemies and battle with them.
+   ![Image of erangel_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/erangel_death.png)\
+   ![Image of miramar_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/miramar_death.png)\
 
 We did not use visualization for following questions since the plot took a long time to process, but we still got meaningful findings: \
 b. Figure out the relationship between player placement and enemies killed(separate by party size).\
