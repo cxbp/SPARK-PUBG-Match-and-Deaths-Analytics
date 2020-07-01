@@ -14,11 +14,11 @@ PUBG is a popular online multiplayer battle royale game. In this project, we man
 This dataset provides two zips: aggregate and deaths. In deaths, the files record every death that occurred within the 720k matches. That is, each row documents an event where a player has died in the match. In aggregate, each match's meta information and player statistics are summarized (as provided by PUBG). It includes various aggregate statistics such as player kills, damage, distance walked, etc as well as metadata on the match itself such as queue size, fpp/tpp, date, etc To summarize and explore the dataset, we are interested in the death reason in the PUBG game, whether it is related with location or other metrics.
 
 #### What dataset you used and your initial plan?
-Initial Plan:
+- Initial Plan:
 Use this dataset to develop some useful suggestions for PUBG players to help them improve the placement in the game. 
 After stacking all data together into two CSV files, we will have sufficient data to find player placements and positions that related most to death in games.
 
-Dataset:
+- Dataset:
 PUBG Match Death and Statistics from Kaggle.com (https://www.kaggle.com/skihikingkevin/pubg-match-deaths) \
 We upload data from S3:
 The datasets are stored in ASW S3 bucket as follow: \
