@@ -102,9 +102,9 @@ We checked many metrics such as AUC, F1, accuracy scores on the testing dataset.
 
 #### Challenges you've had (technical& non-technical) and how you overcame them:
 
-1. Plotting in Pyspark with a huge amount of data is very challenging for us. We try to convert spark dataframe to pandas dataframe then plot. \
-2. Try to do grid search on classification models, but it takes more than 4 hours to train only one individual model, so we removed it (Failed to perform parameter tuning. We need more computing power.); \
-3. Failed to use xxx.toPandas() method. Every time we use this command, the session will die. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
+a. Plotting in Pyspark with a huge amount of data is very challenging for us. We try to convert spark dataframe to pandas dataframe then plot. \
+b. Try to do grid search on classification models, but it takes more than 4 hours to train only one individual model, so we removed it (Failed to perform parameter tuning. We need more computing power.); \
+c. Failed to use xxx.toPandas() method. Every time we use this command, the session will die. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
 
 #### Future work: what would you do differently and what follow-up work would you do? 
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
