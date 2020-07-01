@@ -73,7 +73,7 @@ First, we plot the distribution of survival time and find out the first 120 seco
    ![Image of erangel_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/erangel_death123.png)
    ![Image of miramar_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/miramar_death123.png)
 
-We did not use visualization for following questions since the plot took a long time to process, but we still got meaningful findings: \
+We did not use visualization for following questions since the plot took a long time to process, but we still got meaningful findings: 
 - Figure out the relationship between player placement and enemies killed(separate by party size).
    For a party of 1, on average the player needs to kill 6.9 enemies to win the first place. \
    For a party of 2, on average the player needs to kill 4.4 enemies to win the first place. \
