@@ -72,7 +72,7 @@ a. What location is dangerous for "parachuting"?\
    In Miramar map, Water Treatment and San Martin are the most dangerous places in the first two minutes of the game. \
    If players choose to parachute to these locations, they are very likely to meet enemies and battle with them.
    ![Image of erangel_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/erangel_death.png)\
-   ![Image of miramar_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/miramar_death.png)\
+   ![Image of miramar_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/miramar_death.png)
 
 We did not use visualization for following questions since the plot took a long time to process, but we still got meaningful findings: \
 b. Figure out the relationship between player placement and enemies killed(separate by party size).\
