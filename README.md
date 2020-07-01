@@ -7,13 +7,13 @@ Chuxin Piao, Xiao Wang, Wanyu Zhong
 
 ### Introductory Section
 
-#### Executive Summary
+#### Executive Summary:
 PUBG is a popular online multiplayer battle royale game. In this project, we manipulated two CSV files (around 20GB) with 1200 million rows of data to analyze game statistics. We look into the relationship between locations, weapons, and placements. We also build several models to predict a player's placements based on different features. We hope this project can help game developers as well as game players to learn some new insights on this product. 
 
 #### Introduction:
 This dataset provides two zips: aggregate and deaths. In deaths, the files record every death that occurred within the 720k matches. That is, each row documents an event where a player has died in the match. In aggregate, each match's meta information and player statistics are summarized (as provided by PUBG). It includes various aggregate statistics such as player kills, damage, distance walked, etc as well as metadata on the match itself such as queue size, fpp/tpp, date, etc To summarize and explore the dataset, we are interested in the death reason in the PUBG game, whether it is related with location or other metrics.
 
-#### What dataset you used and your initial plan:
+#### What dataset you used and your initial plan?
 Initial Plan:
 Use this dataset to develop some useful suggestions for PUBG players to help them improve the placement in the game. 
 After stacking all data together into two CSV files, we will have sufficient data to find player placements and positions that related most to death in games.
@@ -37,10 +37,9 @@ Note: we also uploaded two images of the game maps, erangel.jpg, and miramar.jpg
 
 
 ### Exploratory Analysis Section
-#### Any insights you've learned from the data (with charts to illustrate)
-
-- We find player placement (int), which is the players' rank in games can be used as an important dependent variable for our project. 
-- The Aggregate dataset includes 15 columns, 11 of the columns are numbers. From these number columns, we picked game_size, party_size, player_kills, and player survive_time as the important independent variable.
+#### Any insights you've learned from the data (with charts to illustrate):
+- We find player placement (int), which is the players' rank in games can be used as an important dependent variable for our project.\
+The Aggregate dataset includes 15 columns, 11 of the columns are numbers. From these number columns, we picked game_size, party_size, player_kills, and player survive_time as the important independent variable.
 - The Death dataset includes 12 columns, 7 of them are numbers. From these number columns, we picked killer_placement, victim_placement, killer_position_x and y, victim position_x, and y and time as our emphasized variables. From another text column, we focus on killed_by, which indicates the killed weapons for specific players and maps.
 - We found there are only two maps used in map columns and the map picture are also provided in the Kaggle attachments. Thus, we have an initial plan of combing the position axis in the Death dataset and the map together to achieve further visualization.
 
@@ -67,7 +66,7 @@ Our dataset is relatively well structured and cleaned. Here are our steps for cl
 #### Did you just visualize the dataset, and if so, why? 
 Pyspark limited our choice for visualization since we can only plot histograms on Pyspark. We need to transform the dataset into a pandas dataframe for other visualization options. 
 First, we plot the distribution of survival time and find out the first 120 seconds are the most intense and dangerous period since the death rate is high in the first 120 seconds. Then we apply this finding to discover which location is dangerous for parachuting.  
-a. What location is dangerous for "parachuting"?\
+- What location is dangerous for "parachuting"?\
    In the Erangel map, Military Base and Pochinki are the most dangerous places in the first two minutes of the game.  \
    In Miramar map, Water Treatment and San Martin are the most dangerous places in the first two minutes of the game. \
    If players choose to parachute to these locations, they are very likely to meet enemies and battle with them.
@@ -75,17 +74,17 @@ a. What location is dangerous for "parachuting"?\
    ![Image of miramar_death](https://gwu-bigdata-2020-project-group-6.s3.amazonaws.com/miramar_death.png)
 
 We did not use visualization for following questions since the plot took a long time to process, but we still got meaningful findings: \
-b. Figure out the relationship between player placement and enemies killed(separate by party size).\
+- Figure out the relationship between player placement and enemies killed(separate by party size).\
    For a party of 1, on average the player needs to kill 6.9 enemies to win the first place. \
    For a party of 2, on average the player needs to kill 4.4 enemies to win the first place. \
    For a party of 4, on average the player needs to kill 2.9 enemies to win the first place. \
    Hence, playing in larger parties could be actually less stressful for players. 
    
-c. Figure out the relationship between kill_distance and kill_by.\
+- Figure out the relationship between kill_distance and kill_by.\
    Redzone, punch, Motorbike are three shortest kill-distance weapons to be used in the game. \
    M24, AWM, Mk14 are the three longest kill-distance weapons to be used in the game. 
    
-d. Most popular weapons used in the game. \
+- Most popular weapons used in the game. \
    For the winner (1st place player) in the game, top3 most popular weapons are M416, SCAR-L, and M16A4. \
    For 2nd - 9th place players, top3 most popular weapons are also M416, SCAR-L, and M16A4. 
 
@@ -105,9 +104,9 @@ We checked many metrics such as AUC, F1, accuracy scores on the testing dataset.
 
 #### Challenges you've had (technical& non-technical) and how you overcame them:
 
-a. Plotting in Pyspark with a huge amount of data is very challenging for us. We try to convert spark dataframe to pandas dataframe then plot. \
-b. Try to do grid search on classification models, but it takes more than 4 hours to train only one individual model, so we removed it (Failed to perform parameter tuning. We need more computing power.); \
-c. Failed to use xxx.toPandas() method. Every time we use this command, the session will die. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
+- Plotting in Pyspark with a huge amount of data is very challenging for us. We try to convert spark dataframe to pandas dataframe then plot. \
+- Try to do grid search on classification models, but it takes more than 4 hours to train only one individual model, so we removed it (Failed to perform parameter tuning. We need more computing power.); \
+- Failed to use xxx.toPandas() method. Every time we use this command, the session will die. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
 
 #### Future work: what would you do differently and what follow-up work would you do? 
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
