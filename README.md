@@ -5,11 +5,10 @@ project-group-6 created by GitHub Classroom
 ### Group Member 
 Chuxin Piao, Xiao Wang, Wanyu Zhong 
 
-### Executive Summary:
+### Executive Summary
 PUBG is a popular online multiplayer battle royale game. In this project, we manipulated two CSV files (around 20GB) with 1200 million rows of data to analyze game statistics. We look into the relationship between locations, weapons, and placements. We also build several models to predict a player's placements based on different features. We hope this project can help game developers as well as game players to learn some new insights on this product. 
 
-### Introductory Section
-#### Introduction:
+### Introduction
 This dataset provides two zips: aggregate and deaths. In deaths, the files record every death that occurred within the 720k matches. That is, each row documents an event where a player has died in the match. In aggregate, each match's meta information and player statistics are summarized (as provided by PUBG). It includes various aggregate statistics such as player kills, damage, distance walked, etc as well as metadata on the match itself such as queue size, fpp/tpp, date, etc To summarize and explore the dataset, we are interested in the death reason in the PUBG game, whether it is related with location or other metrics.
 
 #### What dataset you used and your initial plan?
