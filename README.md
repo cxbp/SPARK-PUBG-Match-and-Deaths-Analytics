@@ -96,7 +96,7 @@ We did not use visualization for following questions since the plot took a long 
 
 - For the Gradient Boosted Tree classifier, AUC equals to 0.82522 and precision equals to 0.81939. This indicates the GBT model performs well, too. For feature importance, we got similar results as the random forest model. In the GBT model, the survive_time is even more important compared to other features.
 
-After attempting several models, the prediction results prove that features selected by us are significant factors for player's placement. (Features selected : 'player_assists' 'player_dbno', 'player_dist_ride', 'player_dist_walk', 'player_dmg',  'player_kills' and 'player_survive_time)
+After attempting several models, the prediction results prove that features selected by us are significant factors for player's placement. (Features selected : 'player_assists', 'player_dbno', 'player_dist_ride', 'player_dist_walk', 'player_dmg',  'player_kills' and 'player_survive_time')
 
 #### How did you validate your results? 
 Split the training set into 80% training and 20% testing, and validate our prediction results on the 20% testing data. 
