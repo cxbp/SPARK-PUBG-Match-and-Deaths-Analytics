@@ -100,23 +100,23 @@ We did not use visualization for following questions since the plot took a long 
 Split the training set into 80% training and 20% testing, and validate our prediction results on the 20% testing data. 
 We checked many metrics such as AUC, F1, accuracy scores on the testing dataset.
 
-#### Challenges you've had (technical& non-technical) and how you overcame them:
+### Challenges you've had (technical& non-technical) and how you overcame them:
 
 - Plotting in Pyspark with a huge amount of data is very challenging for us. We try to convert spark dataframe to pandas dataframe then plot. 
 - Try to do grid search on classification models, but it takes more than 4 hours to train only one individual model, so we removed it (Failed to perform parameter tuning. We need more computing power.); 
 - Failed to use xxx.toPandas() method. Every time we use this command, the session will die. Alternatively, we use pd.DataFrame(xxx.collect()), but it costs more time.
 
-#### Future work: what would you do differently and what follow-up work would you do? 
+### Future work: what would you do differently and what follow-up work would you do? 
 We hope to explore more complicated topics in the future on this dataset. Such as finding the last circle before ending the game and so on.
 If we can have more computational power without the limitation on the student account, we would love to see the result of the grid search with cross-validation. 
 
-#### Division of labor: which team member was responsible for which part of the project? 
+### Division of labor: which team member was responsible for which part of the project? 
 The work is evenly divided among group members.\
 Chuxin Piao: Working on spark.sql and matching learning coding\
 Wanyu Zhong: Working on spark.sql and matching learning coding\
 Xiao Wang: Working on spark.sql and matching learning coding
 
-#### Takeaways from the course? 
+### Takeaways from the course? 
 From this course, we have learned how to use spark and rdd techniques to efficiently manipulate large datasets. Also, we have practiced different ways to deal with large datasets without using our own computer execution.
 One of the most meaningful takeaways in this course is the importance of considering computation efficiency. How to obtain the expected results using less computation power and time? When dealing with small datasets, we rarely need to take care of this problem. 
 
