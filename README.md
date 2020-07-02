@@ -64,7 +64,7 @@ Our dataset is relatively well structured and cleaned. Here are our steps for cl
 #### Did you just visualize the dataset, and if so, why? 
 Pyspark limited our choice for visualization since we can only plot histograms on Pyspark. We need to transform the dataset into a pandas dataframe for other visualization options. 
 First, we plot the distribution of survival time and find out the first 120 seconds are the most intense and dangerous period since the death rate is high in the first 120 seconds. Then we apply this finding to discover which location is dangerous for parachuting.  
-- What location is dangerous for "parachuting"?
+- What location is dangerous for "parachuting"? \
    In the Erangel map, Military Base and Pochinki are the most dangerous places in the first two minutes of the game.  \
    In Miramar map, Water Treatment and San Martin are the most dangerous places in the first two minutes of the game. \
    If players choose to parachute to these locations, they are very likely to meet enemies and battle with them.
