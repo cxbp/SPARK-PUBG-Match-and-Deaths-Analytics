@@ -112,9 +112,9 @@ If we can have more computational power without the limitation on the student ac
 
 ### Division of labor: which team member was responsible for which part of the project? 
 The work is evenly divided among group members.\
-Chuxin Piao: Working on spark.sql and matching learning coding\
-Wanyu Zhong: Working on spark.sql and matching learning coding\
-Xiao Wang: Working on spark.sql and matching learning coding
+Chuxin Piao: Working on spark.sql and matching learning coding.\
+Wanyu Zhong: Working on spark.sql and matching learning coding.\
+Xiao Wang: Working on spark.sql and matching learning coding.
 
 ### Takeaways from the course? 
 From this course, we have learned how to use spark and rdd techniques to efficiently manipulate large datasets. Also, we have practiced different ways to deal with large datasets without using our own computer execution.
