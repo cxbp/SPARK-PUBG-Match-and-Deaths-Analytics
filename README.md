@@ -1,5 +1,6 @@
 # SPARK - PUBG Match and Deaths Analytics
 ![Image of PUBG](https://upload.wikimedia.org/wikipedia/en/3/3d/PlayerUnknown%27s_Battlegrounds_Steam_Logo.jpg)\
+Pic source: wikipedia
 
 ### Group Member 
 Chuxin Piao, Xiao Wang, Wanyu Zhong 
